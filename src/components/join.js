@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../providers/UserProvider";
 // import "./styles/homePage.styles.css";
 import Logo from "./ciphense_logo.png"
+import Meet from "./meet";
 
 
-class Meet extends React.Component{
+class Join extends React.Component{
     constructor(props){
         super(props);
         this.state={show:"False"}
@@ -12,7 +14,10 @@ class Meet extends React.Component{
    
     
     render(){
-        return(
+        const user = useContext(UserContext);
+        return( 
+            user ? 
+            <Meet/> :
             <div className="auth-inner">
               <div className="join">
                 <img src = {Logo} alt="Logo"/>
@@ -36,4 +41,4 @@ class Meet extends React.Component{
     }
 }
 
-export default Meet;
+export default Join;
