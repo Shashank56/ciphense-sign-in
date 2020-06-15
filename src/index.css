@@ -71,3 +71,11 @@ body, html, .App, #root, .auth-wrapper {
 .forgot-password a {
   color: #167bff;
 }
+
+input {
+  width:100%;
+}
+
+.join {
+  padding-left: 40px;
+}

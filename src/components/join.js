@@ -1,5 +1,6 @@
 import React from "react";
 // import "./styles/homePage.styles.css";
+import Logo from "./ciphense_logo.png"
 
 
 class Meet extends React.Component{
@@ -12,14 +13,18 @@ class Meet extends React.Component{
     
     render(){
         return(
-            <div className="main">
+            <div className="auth-inner">
               <div className="join">
+                <img src = {Logo} alt="Logo"/>
                   <form>
-                      <div className="inputholder">
-                      <input className="textInput" type={"text"} placeholder={"Meeting ID"}  />
+                <br />
+
+                      <div className="form-group">
+                      <input className="textInput center-align" type={"text"} placeholder={"Meeting ID or Personal URL"}  />
                       </div>
+                        <br />
                   </form>
-                  <button className="button" type="submit">
+                  <button className="btn btn-primary btn-block" type="submit">
                       <span>Join meeting</span>
                   </button>
                   {/* <button className="button" type="submit" >

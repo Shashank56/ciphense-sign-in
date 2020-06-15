@@ -12,7 +12,7 @@ class Meet extends Component {
         {/* <div className="row"> */}
           <div className="col s12 center-align">
             <br />
-            <div className="col s2 center-align">
+            <div className="join center-align">
               <Link
                 to="/join"
                 style={{
@@ -26,7 +26,7 @@ class Meet extends Component {
               </Link>
             </div>
             <br />
-            <div className="col s2">
+            <div className="join">
               <Link
                 to="/sign-in"
                 style={{
