@@ -114,11 +114,19 @@ firebase.initializeApp(firebaseConfig);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
-const provider = new firebase.auth.GoogleAuthProvider();
+
+const googleprovider = new firebase.auth.GoogleAuthProvider();
 export const signInWithGoogle = () => {
-  auth.signInWithPopup(provider);
+  auth.signInWithPopup(googleprovider);
 };
 
+const facebookProvider = new firebase.auth.FacebookAuthProvider();
+facebookProvider.setCustomParameters({ display: 'popup' });
+
+export const signInWithFacebook = () => {
+
+    auth.signInWithPopup(facebookProvider);
+};
 export const generateUserDocument = async (user, additionalData) => {
   if (!user) return;
 

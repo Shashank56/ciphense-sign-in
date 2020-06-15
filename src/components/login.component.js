@@ -3,7 +3,7 @@ import Logo from "./ciphense_logo.png"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import GoogleButton from "react-google-button"
 import firebase from './firebase';
-import {signInWithGoogle} from './firebase'
+import {signInWithGoogle,signInWithFacebook} from './firebase'
 import {auth} from './firebase'
 import "firebase/auth";
 import "firebase/firestore";
@@ -127,6 +127,7 @@ export default class Login extends Component {
                 <GoogleButton  onClick={() => {
                     signInWithGoogle();
                 }}/>
+                <button type="submit" className="btn btn-primary btn-block"  onClick={signInWithFacebook}>Facebook</button>
                 <p className="forgot-password text-center"> Not registered Yet?
                     <Link to='/sign-up'> <a href="#">sign up</a> </Link>
                 </p>
