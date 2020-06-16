@@ -13,7 +13,9 @@ function Application() {
   const user = useContext(UserContext);
   return (
         user ?
-        <ProfilePage />
+        <Router>
+        <ProfilePage path='/SignIn' />
+        </Router>
       :
         <Router>
           <Meet path="/" />

@@ -8,7 +8,7 @@ import { UserContext } from "./providers/UserProvider";
 function App() {
   
   return (
-    <div classname="App-header">
+    <div classname="App">
     <div classname="auth-wrapper">
     <UserProvider>
       <Application />
