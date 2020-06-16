@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { UserContext } from "../providers/UserProvider";
 // import "./styles/homePage.styles.css";
 import Logo from "./ciphense_logo.png"
 import Meet from "./meet";
@@ -14,10 +13,8 @@ class Join extends React.Component{
    
     
     render(){
-        const user = useContext(UserContext);
         return( 
-            user ? 
-            <Meet/> :
+            
             <div className="auth-inner">
               <div className="join">
                 <img src = {Logo} alt="Logo"/>
@@ -25,7 +22,7 @@ class Join extends React.Component{
                 <br />
 
                       <div className="form-group">
-                      <input className="textInput center-align" type={"text"} placeholder={"Meeting ID or Personal URL"}  />
+                      <input className="form-control" type={"text"} placeholder={"Meeting ID or Personal URL"}  />
                       </div>
                         <br />
                   </form>

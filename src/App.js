@@ -1,42 +1,20 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { Router } from "@reach/router";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Meet from "./components/meet"
-import Login from "./components/login.component";
-import SignUp from "./components/signup.component";
-import Join from "./components/join"
-
+import Application from "./components/Application";
+import UserProvider from "./providers/UserProvider";
+import { UserContext } from "./providers/UserProvider";
 function App() {
-  return (<Router>
-    <div className="App">
-      {/* <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-        <div className="container">
-          <Link className="navbar-brand" to={"/sign-in"}>Ciphense</Link>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-in"}>Login</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav> */}
-
-      <div className="auth-wrapper">
-        {/* <div className="auth-inner"> */}
-          <Switch>
-            <Route exact path='/' component={Meet} />
-            <Route exact path='/join' component={Join} />
-            <Route path="/sign-in" component={Login} />
-            <Route path="/sign-up" component={SignUp} />
-          </Switch>
-        {/* </div> */}
-      </div>
-    </div></Router>
+  
+  return (
+    <div classname="App-header">
+    <div classname="auth-wrapper">
+    <UserProvider>
+      <Application />
+    </UserProvider>
+    </div>
+    </div>
   );
 }
 

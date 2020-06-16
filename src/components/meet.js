@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@reach/router";
 import Logo from "./ciphense_logo.png"
 
 
@@ -28,13 +28,13 @@ class Meet extends Component {
             <br />
             <div className="join">
               <Link
-                to="/sign-in"
+                to="/SignIn"
                 style={{
                   width: "200px",
                   borderRadius: "3px",
                   letterSpacing: "1.5px"
                 }}
-                className="btn btn-info btn-flat waves-effect white black-text"
+                className="btn btn-info btn-block"
               >
                 HOST MEETING
               </Link>
