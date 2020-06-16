@@ -97,10 +97,10 @@ const SignUp = () => {
               createUserWithEmailAndPasswordHandler(event, email, password);
             }}
           >
-            Sign up
+            Register
           </button>
         </form>
-        <p className="text-center my-3">or</p>
+        <p className="ft">or</p>
         {/* <button
           onClick={() => {
             try {
@@ -113,7 +113,7 @@ const SignUp = () => {
         >
           Sign In with Google
         </button> */}
-        <p className="text-center my-3">
+        <p className="ft">
           Already have an account?{" "}
           <Link to="/SignIn" className="text-blue-500 hover:text-blue-600">
             Sign in here

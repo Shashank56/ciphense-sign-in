@@ -23,7 +23,7 @@ class ProfilePage extends React.Component {
 
 render(){
   return (
-    <div className = "auth-inner">
+    <div className = "auth-inner2">
       <div className="">
         {/* <div
           style={{
@@ -47,18 +47,20 @@ render(){
         <label>Description(optional) </label>
         <input className="form-control"/>
         </div>
+        <br></br>
         <div className="form-group">
         <label>When </label>
         <DatePicker
         selected={this.state.startDate}
         onChange={this.handleChange}
         minDate={new Date()}
-      />
+        />
         </div>
         <div className="">
         <label>Duration </label>
-        <input className="" type="number" min="0"/><h4>hr</h4><input className="" type="number" min="0"/><h4>min</h4>
+        <input className="input2" type="number" min="0"/><label>hr</label><input className="input2" type="number" min="0"/><label>min</label>
         </div>
+        <br></br>
         <div className="form-group">
         <label>TimeZone </label>
         <TimezonePicker

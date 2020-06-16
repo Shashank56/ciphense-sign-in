@@ -66,7 +66,7 @@ const SignIn = () => {
             Sign in
           </button>
         </form>
-        <p className="text-center my-3">or</p>
+        <p className="ft">or</p>
         <button
           className="btn btn-primary btn-block"
           onClick={() => {
@@ -75,7 +75,7 @@ const SignIn = () => {
         >
           Sign in with Google
         </button>
-        <p className="text-center my-3">
+        <p className="ft">
           Don't have an account?{" "}
           <Link to="/signUp" className="text-blue-500 hover:text-blue-600">
             Sign up here

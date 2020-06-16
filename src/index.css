@@ -14,13 +14,14 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-weight: 500;
   font-family: 'Fira Sans', sans-serif;
-  color: #FFF;
+  color: rgb(255, 255, 255);
 }
 
 label,span {
-  font-weight: 400;
+  font-weight: 600;
   font-family: 'Fira Sans', sans-serif;
-  color: rgb(147, 193, 211);
+  font-size: 18px;
+  color: rgb(103, 180, 224);
 }
 
 body, html, .App, #root, .auth-wrapper {
@@ -43,7 +44,22 @@ body, html, .App, #root, .auth-wrapper {
 .auth-inner {
   width: 450px;
   margin: auto;
-  background-image: linear-gradient(to right, black 0% ,#434343 6%);
+  background-color:#2b2727;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 30px 55px 30px 55px;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s;
+  margin-top: 1cm;
+}
+
+.auth-inner2 {
+  width: 750px;
+  margin: auto;
+  background-color:#2b2727;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 30px 55px 30px 55px;
   border-radius: 15px;
@@ -84,9 +100,30 @@ body, html, .App, #root, .auth-wrapper {
   color: #167bff;
 }
 
+.ft {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10px;
+}
+
 input {
   width:100%;
+  text-align: center;
+  margin-left: 20px;
 }
+
+.input2 {
+  width:10%;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.input3{
+  width:70%;
+  text-align: center;
+  margin-left: 20px;
+}
+
 
 .join {
   padding-left: 40px;
