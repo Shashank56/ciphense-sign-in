@@ -72,7 +72,7 @@ const SignUp = () => {
             className="form-control"
             name="userEmail"
             value={email}
-            placeholder="E.g: faruq123@gmail.com"
+            placeholder="Email"
             id="userEmail"
             onChange={event => onChangeHandler(event)}
           />
@@ -101,7 +101,7 @@ const SignUp = () => {
           </button>
         </form>
         <p className="text-center my-3">or</p>
-        <button
+        {/* <button
           onClick={() => {
             try {
               signInWithGoogle();
@@ -112,7 +112,7 @@ const SignUp = () => {
           className="btn btn-primary btn-block"
         >
           Sign In with Google
-        </button>
+        </button> */}
         <p className="text-center my-3">
           Already have an account?{" "}
           <Link to="/SignIn" className="text-blue-500 hover:text-blue-600">
