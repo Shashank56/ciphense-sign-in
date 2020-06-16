@@ -48,7 +48,7 @@ const SignUp = () => {
 
         <form className="">
         <img src = {Logo} alt="Logo"/>
-        <h3>Sign Up</h3>
+        {/* <h3>Sign Up</h3> */}
           <div className="form-group">
           <label htmlFor="displayName" className="block">
             UserName

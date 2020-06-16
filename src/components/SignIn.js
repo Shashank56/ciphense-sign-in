@@ -37,7 +37,7 @@ const SignIn = () => {
         {/* {error !== null && <div className = "py-4 bg-red-600 w-full text-white text-center mb-3">{error}</div>} */}
         <form>
         <img src = {Logo} alt="Logo"/>
-          <h3>Sign In</h3>
+          {/* <h3>Sign In</h3> */}
            <div className="form-group">
                     <label>Email address</label>           
           <input
